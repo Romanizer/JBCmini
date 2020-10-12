@@ -114,7 +114,7 @@ void loop()
     lcd.print("   ");
     lcd.setCursor(5,1);
     lcd.print(tipTempIsDisplay);
-    //interrupts();
+    interrupts();
   }
 
   if (abs(tipTempSet-tipTempSetDisplay) >= 1) // Is it time to update the display?
@@ -126,7 +126,7 @@ void loop()
     lcd.print("   ");
     lcd.setCursor(5,0);
     lcd.print(tipTempSetDisplay);
-    //interrupts();
+    interrupts();
   }
   
   //Rotary Encoder CODE      runs well, might tweak later
